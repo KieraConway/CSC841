@@ -1,0 +1,83 @@
+'''
+#Find distance formula
+Transform the Friis formula to a distance formula to directly calculate the approximate distance (d) between a mobile device and each base station.
+
+P_r=(G_r G_t P_t)/(4πd/λ)^2 	formula
+P_r=(G_r G_t P_t λ^2)/(4πd)^2 	fraction rule
+(4πd)^2×P_r=G_r G_t P_t λ^2	multiply both sides by (4πd)^2
+(4πd)^2=(G_r G_t P_t λ^2)/P_r 	divide both sides by P_r
+4πd=√((G_r G_t P_t λ^2)/P_r )	take square root of both sides
+d=1/4π×√((G_r G_t P_t λ^2)/P_r )	fraction rule
+
+
+#Calculate Wavelength
+Given that all frequencies are 450 kHz, the wavelength (λ) can be determined before proceeding
+λ=c/f
+c=SPEED OF LIGHT
+f=frequency	formula
+f=450 KHZ
+     = 450000 HZ
+     = 4.5 × 10^5 HZ	convert frequency to Hz
+c=3.0×10^8  M/S	notate speed of light
+λ=(3.0×10^8  )/(4.5 × 10^5 )	input values 
+
+
+#CALCULATE DISTANCES
+Perform calculations to determine distance for each specific base station using given formulas and information 
+
+##BASE STATION 1:
+
+### Information
+Location	44.012320, -97.109509 
+Power Transmitted	200 w 
+Power Received	17.3512367 w
+Transmitter Gain	10 
+Receiver Gain	25 
+Frequency	450 kHz (4.5 × 10^5 Hz)
+
+### Calculate Distance
+D=1/4Π×√((G_R G_T P_T Λ^2)/P_R )	distance formula
+d=1/4π×√((25×10  ×200 ×((3.0×10^8  )/(4.5 × 10^5 ))^2)/17.3512367)	input known value
+d=1/4π×√((25×10×200 ×444444.44 ̅)/17.3512367)	Solve for λ^2
+d=1/4π×√(22222222000/17.3512367)	multiplication
+d=1/4π×√(1.2807284 × 10^9 )	division
+d=1/4π×35787.27	solve for square root
+d=2847.860M	multiplication
+
+##Base Station 2:
+### Information
+Location	44.013371, -97.289582 
+Power Transmitted	200 w 
+Power Received	0.99757704 w
+Transmitter Gain	10 
+Receiver Gain	25 
+Frequency	450 kHz (4.5 × 10^5 Hz)
+
+### Calculate Distance
+D=1/4Π×√((G_R G_T P_T Λ^2)/P_R )	distance formula
+d=1/4π×√((25×10  ×200 ×((3.0×10^8  )/(4.5 × 10^5 ))^2)/(0.99757704 ))	input known value
+d=1/4π×√((25×10×200 ×444444.44 ̅)/(0.99757704 ))	Solve for λ^2
+d=1/4π×√(22222222000/(0.99757704 ))	multiplication
+d=1/4π×√(2.2276196 × 10^10 )	division
+d=1/4π×149252.12	solve for square root
+d=11877.106M	multiplication
+
+
+##Base Station 3:
+### Information
+Location	44.119244,-97.215958 
+Power Transmitted	200 w 
+Power Received	0.9337055 w
+Transmitter Gain	10 
+Receiver Gain	25 
+Frequency	450 kHz (4.5 × 10^5 Hz)
+
+### Calculate Distance
+D=1/4Π×√((G_R G_T P_T Λ^2)/P_R )	distance formula
+d=1/4π×√((25×10  ×200 ×((3.0×10^8  )/(4.5 × 10^5 ))^2)/(0.9337055 ))	input known value
+d=1/4π×√((25×10×200 ×444444.44 ̅)/(0.9337055 ))	Solve for λ^2
+d=1/4π×√(22222222000/(0.9337055 ))	multiplication
+d=1/4π×√(2.3800033 × 10^10 )	division
+d=1/4π×154272.59	solve for square root
+d=12276.623M	multiplication
+'''
