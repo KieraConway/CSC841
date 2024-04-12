@@ -1,0 +1,6 @@
+*.tmp
+*/~*.docx
+**/scratch.txt
+**/scratch.py
+*/scratch.drawio
+
